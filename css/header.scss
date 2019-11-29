@@ -1,3 +1,19 @@
 body {
     margin-top: 25px;
 }
+
+main.container-fluid {
+    background: url(images/background-british-budget-business-41183.jpeg);
+    background-size: cover;
+    min-height: 350px;
+    margin-top: 50px;
+    padding-top: 25px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+    background-color: transparent;
+}

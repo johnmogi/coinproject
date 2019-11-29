@@ -1,30 +1,20 @@
+/// <reference path="jquery-3.4.1.js" />
+
 const config = {
-    mainUrl: "https://api.coingecko.com/api/v3/coins/list",
-    currencyInfoUrl: "https://api.coingecko.com/api/v3/coins"
+    allCoins: "https://api.coingecko.com/api/v3/coins/list",
+    oneCoin: "https://api.coingecko.com/api/v3/coins"
 }
 const api = {
-    getAllCurrencies: function () {
+    retreiveCurrencies: function () {
         return new Promise((resolve) => {
             $.ajax({
-                url: config.mainUrl,
+                url: config.allCoins,
                 method: "GET",
                 success: function (currencies) {
                     resolve(currencies)
                 },
             })
         })
-    },
-    getCurrencyInfo: function (id) {
-        return new Promise((resolve) => {
-            $.ajax({
-                url: `${config.currencyInfoUrl}/${id}`,
-                method: "GET",
-                success: function (currency) {
-                    resolve(currency)
-                },
-            })
-        })
-
     }
 
 }
