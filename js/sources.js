@@ -8,7 +8,7 @@ const api = {
     retreiveCurrencies: function () {
         return new Promise((resolve) => {
             $.ajax({
-                url: config.allCoins,
+                url: config.oneCoin,
                 method: "GET",
                 success: function (currencies) {
                     resolve(currencies)
