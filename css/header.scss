@@ -3,20 +3,23 @@ body {
 }
 
 main.container-fluid {
+
+
     background: url(images/background-british-budget-business-41183.jpeg);
-    background-size: cover;
-    min-height: 350px;
-    margin-top: 50px;
-    padding-top: 25px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0;
 
 }
 
 .backgroundCoin {
-    background: #000000;
+    background: #0000008c;
+    color: #fff;
+    border-radius: 0.5em;
+    padding: 1%;
+    width: 100%;
 }
 
 .jumbotron {
