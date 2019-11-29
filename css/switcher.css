@@ -1,27 +1,3 @@
-body {
-  margin-top: 25px;
-}
-
-main.container-fluid {
-  background: #000000;
-}
-
-.backgroundCoin {
-  background: url(images/background-british-budget-business-41183.jpeg);
-  background-size: cover;
-  min-height: 350px;
-  margin-top: 50px;
-  padding-top: 25px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.jumbotron {
-  background-color: transparent;
-}
-
 .custom-control {
   position: relative;
   display: block;
@@ -50,7 +26,7 @@ main.container-fluid {
 
 .custom-control-input:focus ~ .custom-control-label::before {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
@@ -110,8 +86,8 @@ main.container-fluid {
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
-  border-color: #007bff;
-  background-color: #007bff;
+  border-color: indigo;
+  background-color: indigo;
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
@@ -119,11 +95,11 @@ main.container-fluid {
 }
 
 .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(0, 123, 255, 0.5);
+  background-color: indigo;
 }
 
 .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
-  background-color: rgba(0, 123, 255, 0.5);
+  background-color: indigo;
 }
 
 .custom-radio .custom-control-label::before {
@@ -135,11 +111,12 @@ main.container-fluid {
 }
 
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(0, 123, 255, 0.5);
+  background-color: indigo;
 }
 
 .custom-switch {
   padding-left: 2.25rem;
+  float: right;
 }
 
 .custom-switch .custom-control-label::before {
@@ -151,7 +128,7 @@ main.container-fluid {
 
 .custom-switch .custom-control-label::after {
   top: calc(.25rem + 2px);
-  left: calc(-2.25rem + 2px);
+  left: calc(-1.35rem);
   width: calc(1rem - 4px);
   height: calc(1rem - 4px);
   background-color: #adb5bd;
@@ -163,4 +140,4 @@ main.container-fluid {
   transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-transform .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
   transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-transform .15s ease-in-out;
 }
-/*# sourceMappingURL=header.css.map */
+/*# sourceMappingURL=switcher.css.map */

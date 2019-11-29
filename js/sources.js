@@ -1,4 +1,4 @@
-/// <reference path="jquery-3.4.1.js" />
+/// <reference path="./lib/jquery-3.4.1.js" />
 
 const config = {
     allCoins: "https://api.coingecko.com/api/v3/coins/list",
@@ -12,7 +12,7 @@ const api = {
                 method: "GET",
                 success: function (currencies) {
                     resolve(currencies)
-                },
+                }
             })
         })
     }
