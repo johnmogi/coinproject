@@ -13,6 +13,11 @@ const api = {
                 success: function (currencies) {
                     resolve(currencies)
                 },
+                error: function () {
+                    alert("error")
+                    // alert(xhr.status);
+                    // alert(thrownError);
+                }
             })
         })
     }
