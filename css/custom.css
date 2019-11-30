@@ -1,5 +1,8 @@
 .card {
+  min-width: 16.5rem;
   max-width: 17rem;
+  margin: 0.25em;
+  border: 1px solid;
 }
 
 .card p {
@@ -11,7 +14,8 @@
   padding-left: 0;
 }
 
-.hero {
+.hero,
+#stage {
   margin-top: 25px;
 }
 /*# sourceMappingURL=custom.css.map */
