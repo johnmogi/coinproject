@@ -1,6 +1,8 @@
-function drawCoin(currency) {
+$(() => {
 
-    const card = `
+    function drawCoin(currency) {
+
+        const card = `
         
     <div class="card bg-light border-dark col-4" id="${currency.id}">
     <div class="card-body bg-transparent">
@@ -29,8 +31,23 @@ function drawCoin(currency) {
 
     `
 
-    $("#stage").append(card)
+        $("#stage").append(card)
 
 
-    console.log(currency)
-}
+        console.log(currency)
+    }
+
+
+    $("#chartContainer").CanvasJSChart(tempArr.data);
+
+    function toggleDataSeries(e) {
+        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+            e.dataSeries.visible = false;
+        } else {
+            e.dataSeries.visible = true;
+        }
+        e.chart.render();
+    }
+
+
+}); //RF

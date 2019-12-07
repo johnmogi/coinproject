@@ -28,14 +28,14 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link btn btn-raised btn-secondary" href="#">Home <span
+                        <a class="nav-link btn btn-raised btn-secondary" id="homeBut" href="#">Home <span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-raised btn-secondary" href="#">Live Reports</a>
+                        <a class="nav-link btn btn-raised btn-secondary" id="liveBut" href="#">Live Reports</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-raised btn-secondary" href="#">About me</a>
+                        <a class="nav-link btn btn-raised btn-secondary" id="aboutBut" href="#">About me</a>
                     </li>
                 </ul>
                 <form class="form-inline mt-2 mt-md-0">
@@ -78,6 +78,7 @@
     <div id="mainArea" class="container">
         <div class="row" id="stage" style="min-height:350px;">
 
+            <div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
 
 
         </div>
@@ -104,8 +105,13 @@
         <script src="./js/lib/bootstrap-material-design.js">
         </script>
         <script src="js/sources.js"></script>
+
+        <!-- <script src="./js/drawCoin.js"></script> -->
         <script src="./js/main.js"></script>
-        <script src="./js/drawCoin.js"></script>
+        <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+        <script src="./js/datademo.js"></script>
+
     </footer>
 
 </body>
